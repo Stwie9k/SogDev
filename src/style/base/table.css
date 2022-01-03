@@ -1,0 +1,32 @@
+.s-table {
+    width: 100%;
+}
+
+table.s-table tr {
+    height: 48px;
+}
+
+table.s-table th,
+td {
+    border-bottom: 1px solid #bbbbbb;
+    padding: 0px 16px;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+table.s-table tbody tr:nth-child(2n) {
+    background-color: #e5e5e5;
+}
+
+table.s-table tbody tr:hover {
+    background-color: #ebf9f4;
+    cursor: pointer;
+}
+
+table.s-table tbody tr.s-selected {
+    background-color: #ebf9f4;
+}
+
+.active-row {
+    background-color: #ebf9f4 !important;
+}

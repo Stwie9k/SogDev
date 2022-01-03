@@ -1,0 +1,84 @@
+.s-paging {
+    width: 100%;
+    height: 56px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.s-paging .s-paging-left {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.s-paging .s-paging-center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.s-paging .s-paging-right {
+    height: 100%;
+    width: 100%;
+    line-height: 56px;
+    text-align: right;
+}
+
+.s-paging .s-paging-button {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border: unset;
+    background-color: unset;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.s-paging .s-paging-button:hover {
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.s-paging .s-first-page {
+    background-image: url('../../assets/icon/btn-firstpage.svg');
+}
+
+.s-paging .s-prev-page {
+    background-image: url('../../assets/icon/btn-prev-page.svg');
+}
+
+.s-paging .s-next-page {
+    background-image: url('../../assets/icon/btn-next-page.svg');
+}
+
+.s-paging .s-last-page {
+    background-image: url('../../assets/icon/btn-lastpage.svg');
+}
+
+.s-paging .s-page-number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #bbbbbb;
+    cursor: pointer;
+    margin: 4px;
+}
+
+
+/* .s-paging .s-page-number:hover {
+    background-color: #ffffff;
+} */
+
+.active {
+    background-color: #019160;
+    color: #ffffff;
+}

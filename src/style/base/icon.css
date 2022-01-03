@@ -1,0 +1,30 @@
+.s-icon-logo {
+    width: 24px;
+    height: 24px;
+    background-image: url('../../assets/img/toggle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.s-logo {
+    width: 100%;
+    height: 24px;
+    background-image: url('../../assets/cukcuk-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.s-header-avatar {
+    background-image: url('../../assets/icon/avatar-default.png');
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+.s-icon-option {
+    width: 16px;
+    height: 16px;
+    background-image: url('../../assets/icon/option.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}

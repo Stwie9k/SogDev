@@ -1,0 +1,26 @@
+.s-header {
+    height: 60px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.s-header .s-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.s-header .s-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.s-header .s-header-right .s-header-avatar {
+    margin-right: 16px;
+}
+
+.s-header .s-header-right .s-content-details {
+    margin-right: 16px;
+}

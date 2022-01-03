@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: GoogleSans-Regular;
+    font-size: 13px;
+    color: #454545;
+}
+
+.s-wrapper {
+    display: flex;
+}
+
+.s-container {
+    flex: 1;
+}
+
+.s-heading {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+}
+
+.s-tittle {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+}
+
+.s-tittle2 {
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.s-label {
+    font-weight: Regular;
+    font-size: 13px;
+    color: #454545;
+    margin-bottom: 4px;
+}
+
+.s-label-field-input {
+    font-weight: Medium;
+    font-size: 13px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.s-content-details {
+    font-weight: Medium;
+    font-size: 13px;
+    color: #000000;
+}
+
+@font-face {
+    font-family: GoogleSans-Black;
+    src: url('../assets/font/GoogleSans-Black.otf');
+}
+
+@font-face {
+    font-family: GoogleSans-BlackItalic;
+    src: url('../assets/font/GoogleSans-BlackItalic.otf');
+}
+
+@font-face {
+    font-family: GoogleSans-Bold;
+    src: url('../assets/font/GoogleSans-Bold.otf');
+}
+
+@font-face {
+    font-family: GoogleSans-BoldItalic;
+    src: url('../assets/font/GoogleSans-BoldItalic.otf');
+}
+
+@font-face {
+    font-family: GoogleSans-Light;
+    src: url('../assets/font/GoogleSans-Light.otf');
+}
+
+@font-face {
+    font-family: GoogleSans-LightItalic;
+    src: url('../assets/font/GoogleSans-LightItalic.otf');
+}
+
+@font-face {
+    font-family: GoogleSans-Medium;
+    src: url('../assets/font/GoogleSans-Medium.otf');
+}
+
+@font-face {
+    font-family: GoogleSans-MediumItalic;
+    src: url('../assets/font/GoogleSans-MediumItalic.otf');
+}
+
+@font-face {
+    font-family: GoogleSans-Regular;
+    src: url('../assets/font/GoogleSans-Regular.otf');
+}
+
+@font-face {
+    font-family: GoogleSans-Thin;
+    src: url('../assets/font/GoogleSans-Thin.otf');
+}
+
+@font-face {
+    font-family: GoogleSans-ThinItalic;
+    src: url('../assets/font/GoogleSans-ThinItalic.otf');
+}

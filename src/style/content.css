@@ -1,0 +1,28 @@
+.s-content .s-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 10px;
+}
+
+.s-content .s-content-filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
+
+.s-content .s-content-filter-bar .s-filter-left {
+    display: flex;
+}
+
+.s-content .s-grid-box {
+    width: 100%;
+    padding: 0 16px;
+}
+
+.s-content .s-grid {
+    width: 100%;
+    height: 528px;
+    overflow: auto;
+}
