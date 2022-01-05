@@ -1,6 +1,6 @@
 .s-button {
-    height: 40px;
-    background-color: #019160;
+    height: 32px;
+    background-color: #2ca01c;
     border-radius: 4px;
     color: #ffffff;
     padding: 0 24px;
@@ -8,8 +8,8 @@
     border: none;
     outline: none;
     cursor: pointer;
-    min-width: 100px;
-    line-height: 40px;
+    min-width: 80px;
+    line-height: 32px;
 }
 
 .s-button:hover {
@@ -30,7 +30,7 @@
 }
 
 .s-button-seconds {
-    height: 40px;
+    height: 32px;
     border: 1px solid #bbbbbb;
     background-color: #ffffff;
     border-radius: 4px;
@@ -45,8 +45,11 @@
     background-color: #E9EBEE;
 }
 
-.s-button-seconds-refresh {
+
+/* .s-button-seconds-refresh {
     background-image: url('../../assets/icon/refresh.png');
     background-repeat: no-repeat;
     background-position: center;
-}
+    border-radius: unset;
+    border: unset
+} */

@@ -5,17 +5,15 @@
 }
 
 body {
-    font-family: GoogleSans-Regular;
     font-size: 13px;
-    color: #454545;
+    font-family: Roboto;
+    background: #f4f5f8;
+    font-weight: 400;
+    max-width: 100%;
 }
 
 .s-wrapper {
     display: flex;
-}
-
-.s-container {
-    flex: 1;
 }
 
 .s-heading {
@@ -54,7 +52,6 @@ body {
 .s-content-details {
     font-weight: Medium;
     font-size: 13px;
-    color: #000000;
 }
 
 @font-face {

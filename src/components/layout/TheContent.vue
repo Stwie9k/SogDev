@@ -2,12 +2,14 @@
 <div class="s-content">
                     <div class="s-header-content">
                         <div class="s-tittle">NHÂN VIÊN</div>
-                        <button id="btnAddEmployee" class="s-button s-button-icon" >Thêm nhân viên</button>
+                        <button id="btnAddEmployee" class="s-button " >Thêm nhân viên</button>
                     </div>
-                    <div class="s-content-filter-bar">
+                    
+                    <div class="s-grid-box">
+                        <div class="s-content-filter-bar">
                         <div class="s-filter-left">
                 
-                           <input class="s-input s-input-icon" type="text" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại." style="width: 300px" />
+                           <input class="s-input s-input-icon" type="text" placeholder="Tìm kiếm theo mã nhân viên." style="width: 220px" />
                             <!-- <div class="s-combobox">
                                 <input type="text">
                                 <button id="btncombobox"><i class="fas fa-angle-down"></i></button>
@@ -28,43 +30,50 @@
                             </div> -->
                         </div>
                         <div class="s-filter-rigth">
-                            <button id="s-btnrefresh" class="s-button-seconds s-button-seconds-refresh"> </button>
+                            <button id="s-btnrefresh" class="s-me s-me-icon24 s-refresh"> </button>
                         </div>
                     </div>
-                    <div class="s-grid-box">
                         <div class="s-grid">
-                            <table id="s-tbCustomer" cellspacing="0" class="s-table">
-                                <thead>
-                                    <tr>
-                                        <th propertyName="CustomerCode">Mã nhân viên</th>
-                                        <th propertyName="FullName">Họ và tên</th>
-                                        <th propertyName="Gender" formatType="gender">Giới tính</th>
-                                        <th class="text-align-center" propertyName="DateOfBirth" formatType="date">Ngày sinh</th>
-                                        <th propertyName="PhoneNumber">Điện thoại</th>
-                                        <th propertyName="Email">Email</th>
-                                        <th class="text-align-right" propertyName="DebitAmount" formatType="money">Mức lương cơ bản</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                
-                                    <tr  v-for="employee in employees" :key="employee.EmployeeID">
-                                        <td>{{employee.EmployeeCode}}</td>
-                                        <td>{{employee.EmployeeName}}</td>
-                                        <td>{{employee.GenderName}}</td>
-                                        <td>{{formatDate(employee.DateOfBirth) }}</td>
-                                        <td>{{employee.PhoneNumber}}</td>
-                                        <td>{{employee.Email}}</td>
-                                        <td>{{employee.Salary}}</td>
-                                    </tr>
-
-
-                                </tbody>
+                           <table id="s-tbCustomer" cellspacing="0" class="s-table" >
+                            <thead>
+                                  <tr>
+                                        <th class="s-table-th" spropertyName="CustomerCode">MÃ NHÂN VIÊN</th>
+                                        <th class="s-table-th" propertyName="FullName">TÊN NHÂN VIÊN </th>
+                                        <th class="s-table-th" propertyName="Gender" formatType="gender">GIỚI TÍNH</th>
+                                        <th class="text-align-center s-table-th" propertyName="DateOfBirth" formatType="date">NGÀY SINH</th>
+                                        <th class="s-table-th" propertyName="PhoneNumber">SỐ CMND</th>
+                                        <th class="s-table-th" propertyName="PhoneNumber">CHỨC DANH</th>
+                                        <th class="s-table-th" propertyName="PhoneNumber">TÊN ĐƠN VI</th>
+                                        <th class="s-table-th" propertyName="PhoneNumber">SỐ TÀI KHOẢN</th>
+                                        <th class="s-table-th" propertyName="PhoneNumber">TÊN NGÂN HÀNG</th>
+                                        <th class="s-table-th" propertyName="PhoneNumber">CHI NHÁNH TK NGÂN HÀNG</th>
+                                        <th class="s-table-th" propertyName="Email">CHỨC NĂNG</th>
+                                  </tr>
+                            </thead>
+                            <tbody class="s-table-tbody">
+                                   
+                                   <tr class="s-table-tr" v-for="employee in employees" :key="employee.EmployeeID">
+                                        <td class="s-table-td" >{{employee.EmployeeCode}}</td>
+                                        <td class="s-table-td">{{employee.EmployeeName}}</td>
+                                        <td class="s-table-td">{{employee.GenderName}}</td>
+                                        <td class="s-table-td">{{formatDate(employee.DateOfBirth) }}</td>
+                                        <td class="s-table-td">{{employee.EmployeeCode}}</td>
+                                        <td class="s-table-td">{{employee.PositionName}}</td>  
+                                        <td class="s-table-td">{{employee.DepartmentName}}</td>
+                                        <td class="s-table-td">{{employee.BankAccountNumber}}</td>
+                                         <td class="s-table-td">{{employee.BankName}}</td>
+                                        <td class="s-table-td">{{employee.BankBranchName}}</td>
+                                        <td class="s-table-td">{{employee.GenderName}}</td>
+                                    
+                                    </tr> 
+                                   
+                            </tbody>
                             </table>
 
                         </div>
-                    </div>
+                  
                     <div class="s-paging">
-                        <div class="s-paging-left ">Hiển thị 01-20/123 lao động</div>
+                        <div class="s-paging-left ">Tổng số 15 bản ghi</div>
                         <div class="s-paging-center ">
                             <button class="s-first-page s-paging-button"></button>
                             <button class="s-prev-page s-paging-button"></button>
@@ -81,6 +90,7 @@
 
 
                     </div>
+                      </div>
                 </div>
               
     
@@ -98,28 +108,43 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px 16px 10px;
+   
 }
 
 .s-content .s-content-filter-bar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px 16px;
+    justify-content: flex-end;
+    padding: 16px 16px ;
+
 }
 
 .s-content .s-content-filter-bar .s-filter-left {
     display: flex;
 }
 
+.s-table-th{
+    font-size: 12px;
+}
+
 .s-content .s-grid-box {
-    width: 100%;
-    padding: 0 16px;
+    background-color: #fff;
+    margin-right: 16px;
+    margin-left: 16px;
 }
 
 .s-content .s-grid {
     width: 100%;
-    height: 528px;
-    overflow: auto;
+    /* height: 528px;
+    overflow: auto; */
+}
+.s-refresh  {
+     margin-left: 16px ;
+     background-position-x: -423px;
+     background-position-y: -199px; 
+     border-radius: unset;
+     border: unset
+     
 }
 </style>
 <script>
@@ -136,7 +161,7 @@ export default {
 
       */
      getData(){
-         var me = this;
+         let me = this;
      axios
       .get("http://amis.manhnv.net/api/v1/Employees")
       .then(function (res) {
