@@ -9,7 +9,7 @@
                         <div class="s-me s-me-icon24 s-me-nav1 "></div>
                         <div class="s-content-details">Tổng quan</div>
                     </div>
-                    <div class="s-nav-item">
+                    <div class="s-nav-item" >
                         <div class="s-me s-me-icon24 s-me-nav2"></div>
                         <div class="s-content-details">Tiền Mặt</div>
                     </div>
@@ -17,14 +17,14 @@
                         <div class="s-me s-me-icon24 s-me-nav3"></div>
                         <div class="s-content-details">Tiền Gửi</div>
                     </div>
-                    <div class="s-nav-item">
+                    <router-link class="s-nav-item" to="/purchase">
                         <div class="s-me s-me-icon24 s-me-nav4"></div>
                         <div class="s-content-details">Mua Hàng</div>
-                    </div>
-                    <div class="s-nav-item">
+                    </router-link>
+                    <router-link class="s-nav-item" to="/sell">
                         <div class="s-me s-me-icon24 s-me-nav5"></div>
                         <div class="s-content-details">Bán hàng</div>
-                    </div>
+                    </router-link>
                      <div class="s-nav-item">
                         <div class="s-me s-me-icon24 s-me-nav6"></div>
                         <div class="s-content-details">Quản Lý Hóa Đơn</div>
@@ -65,6 +65,10 @@
                         <div class="s-me s-me-icon24 s-me-nav15"></div>
                         <a class="s-content-details" >Phân tích tài chính</a>
                     </div>
+                    <!-- <router-link class="s-nav-item" to = "/employee">
+                        <div class="s-me s-me-icon24 s-me-nav15"></div>
+                        <a class="s-content-details" > Nhân viên</a>
+                    </router-link> -->
                 </div>
             </div>
 </template>
