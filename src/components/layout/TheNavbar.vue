@@ -65,10 +65,10 @@
                         <div class="s-me s-me-icon24 s-me-nav15"></div>
                         <a class="s-content-details" >Phân tích tài chính</a>
                     </div>
-                    <!-- <router-link class="s-nav-item" to = "/employee">
+                    <router-link class="s-nav-item" to = "/employee">
                         <div class="s-me s-me-icon24 s-me-nav15"></div>
                         <a class="s-content-details" > Nhân viên</a>
-                    </router-link> -->
+                    </router-link>
                 </div>
             </div>
 </template>

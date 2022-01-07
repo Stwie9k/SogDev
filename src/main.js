@@ -3,11 +3,12 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import PurchaseList from './view/purchase/Purchase.vue'
 import SellList from './view/sell/Sell.vue'
+import EmployeeList from './view/employee/EmployeeList.vue'
 
-// import axios from 'axios'
-// import VueAxios from 'vue-axios'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter, axios, VueAxios)
 Vue.config.productionTip = false
 
 
@@ -15,7 +16,8 @@ Vue.config.productionTip = false
 //Thiet lap router
 const routes = [
     { path: '/purchase', component: PurchaseList },
-    { path: '/sell', component: SellList }
+    { path: '/sell', component: SellList },
+    { path: '/employee', component: EmployeeList }
 ]
 const router = new VueRouter({
     mode: 'history',
